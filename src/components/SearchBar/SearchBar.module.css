@@ -1,5 +1,5 @@
 .search {
-  max-width: 500px;
+  width: 500px;
   margin: 0 auto;
   display: flex;
   gap: 10px;
@@ -8,7 +8,7 @@
 .header {
   width: 100%;
   padding: 20px;
-  background-color: rgba(45, 45, 251, 0.753);
+  background-color: rgba(245, 65, 24, 0.857);
 }
 
 .input {
