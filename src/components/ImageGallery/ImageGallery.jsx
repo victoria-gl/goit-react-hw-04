@@ -1,5 +1,6 @@
 import css from "./ImageGallery.module.css";
-import ModalCard from "../ModalCard/ModalCard";
+// import ModalCard from "../ModalCard/ModalCard";
+import ImageCard from "../ImageCard/ImageCard";
 
 const ImageGallery = ({ pictures }) => {
   return (
@@ -7,7 +8,7 @@ const ImageGallery = ({ pictures }) => {
       <ul className={css.list}>
         {pictures.map((picture) => (
           <li key={picture.id} className={css.item}>
-            <ModalCard picture={picture} />
+            <ImageCard picture={picture} />
           </li>
         ))}
       </ul>
