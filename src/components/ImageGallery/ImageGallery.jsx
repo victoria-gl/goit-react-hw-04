@@ -1,17 +1,24 @@
-import css from "./ImageGallery.module.css";
 import ImageCard from "../ImageCard/ImageCard";
+import css from "./ImageGallery.module.css";
 
-const ImageGallery = ({ pictures }) => {
+const ImageGallery = ({ images, onClick, onImageClick }) => {
+  const handleClick = (imageId) => {
+    onClick();
+    onImageClick(imageId);
+  };
+
   return (
-    <div className={css.container}>
-      <ul className={css.list}>
-        {pictures.map((picture) => (
-          <li key={picture.id} className={css.item}>
-            <ImageCard picture={picture} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={css["gallery"]}>
+      {images.map((image) => (
+        <li key={image.id} onClick={() => handleClick(image.id)}>
+          <ImageCard
+            likes={image.likes}
+            photo={image.urls.small}
+            descr={image.description}
+          />
+        </li>
+      ))}
+    </ul>
   );
 };
 

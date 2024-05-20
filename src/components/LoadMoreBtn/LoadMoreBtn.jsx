@@ -1,13 +1,11 @@
 import css from "./LoadMoreBtn.module.css";
-
-const LoadMore = ({ onClick }) => {
+const LoadMoreBtn = ({ onClick }) => {
   return (
-    <>
-      <button onClick={onClick} className={css.button}>
+    <div className={css["load-more-wrapper"]}>
+      <button className={css["load-more"]} onClick={onClick}>
         Load more
       </button>
-    </>
+    </div>
   );
 };
-
-export default LoadMore;
+export default LoadMoreBtn;

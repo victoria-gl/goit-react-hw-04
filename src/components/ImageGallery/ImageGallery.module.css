@@ -1,16 +1,10 @@
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-.list {
-  padding: 0 5px;
+.gallery {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
-  justify-content: space-around;
-  list-style: none;
-}
-
-.item {
-  width: calc(1400px / 4);
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 21px;
+  margin-bottom: 8px;
 }

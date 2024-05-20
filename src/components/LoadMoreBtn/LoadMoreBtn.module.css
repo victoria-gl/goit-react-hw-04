@@ -1,3 +1,11 @@
-.button {
-  margin-bottom: 30px;
+.load-more-wrapper {
+  margin: 30px auto;
+}
+.load-more {
+  border: none;
+  padding: 12px;
+  width: 180px;
+  background-color: rgba(245, 65, 24, 0.857);
+  border-radius: 5px;
+  margin-left: 650px;
 }
