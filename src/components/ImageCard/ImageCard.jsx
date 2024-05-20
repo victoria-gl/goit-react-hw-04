@@ -1,6 +1,6 @@
 import css from "./ImageCard.module.css";
 
-const ImageCard = ({ picture }) => {
+const ImageCard = ({ picture, onClick }) => {
   return (
     <div className={css.thumb}>
       <img
@@ -8,6 +8,7 @@ const ImageCard = ({ picture }) => {
         src={picture.urls.small}
         alt={picture.description}
         id={picture.id}
+        onClick={() => onClick(picture.id)}
       />
     </div>
   );

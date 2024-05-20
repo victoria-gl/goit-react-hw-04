@@ -1,5 +1,4 @@
 import css from "./ImageGallery.module.css";
-// import ModalCard from "../ModalCard/ModalCard";
 import ImageCard from "../ImageCard/ImageCard";
 
 const ImageGallery = ({ pictures }) => {

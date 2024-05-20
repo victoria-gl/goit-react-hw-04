@@ -3,7 +3,7 @@ import { Toaster } from "react-hot-toast";
 import searchCardByQuery from "../../fetch-api";
 import { useState, useEffect } from "react";
 import ImageGallery from "../ImageGallery/ImageGallery";
-import LoadMore from "../LoadMore/LoadMore";
+import LoadMore from "../LoadMoreBtn/LoadMoreBtn";
 import "./App.css";
 
 const App = () => {
